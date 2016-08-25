@@ -1,0 +1,30 @@
+<svg  [attr.width] = "boxSize" [attr.height] = "boxSize" >
+  <circle
+    [attr.cx] = "cx"
+    [attr.cy] = "cy"
+    [attr.r] = "radius"
+    [attr.fill]="backgroundColor"
+    [attr.stroke]="color"/>
+
+  <path
+    [attr.d] = "circleM+ circleL+ circleA+ '0 ' + arcSweep + circleEnd + 'Z'"
+    [attr.stroke]="color"
+    [attr.fill]="color"/>
+  <circle
+    [attr.cx] = "cx"
+    [attr.cy] = "cy"
+    [attr.r] = "innerRadius"
+    [attr.fill]="innerFill"
+    [attr.stroke]="color" />
+  <text
+    [attr.x]="fontX"
+    [attr.y]="fontY"
+    [attr.text-anchor]="textAnchor"
+    [attr.fill]="fontColor"
+    [attr.font-size]="fontSize"
+    [attr.font-family]="fontFamily">{{circleText}}</text>
+</svg>
+
+
+
+
