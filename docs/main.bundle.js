@@ -42952,7 +42952,7 @@ var AppComponent = (function () {
         this.boxSize = 200;
         this.radius = 90;
         this.border = 20;
-        this.time = 5;
+        this.time = 0;
         this.fontFamily = "Arial";
         this.fontSize = 15;
     }
@@ -55263,7 +55263,7 @@ module.exports = ""
 /* 489 */
 /***/ function(module, exports) {
 
-module.exports = "<h1>\n  {{title}}\n</h1>\n<div>\n\n\n  <circle-progress #circleProg1\n                   [percent]=\"circle1\"\n                   [boxSize]=\"boxSize\"\n                   [radius]=\"radius\"\n                   [lowColor]=\"'red'\"\n                   [middleColor]=\"'orange'\"\n                   [interColor]=\"'#f1c40f'\"\n                   [highColor]=\"'#16a085'\"\n                   [border]=\"border\"\n                   [fontSize]=\"fontSize\"\n                   [fontFamily]=\"fontFamily\"\n                   [time]=\"time\"\n                   (click)=\"circleProg1.animate()\"\n  ></circle-progress>\n  <br>\n  <label>Percentage</label><input type=\"range\" min=0 max=100 [(ngModel)]=\"circle1\"> {{circle1}}<br>\n  <label>boxSize</label><input type=\"range\" min=0 max=1000 [(ngModel)]=\"boxSize\"> {{boxSize}}<br>\n  <label>Radius</label><input type=\"range\" min={{border}} max={{boxSize*0.5}} [(ngModel)]=\"radius\"> {{radius}}<br>\n  <label>Border</label><input type=\"range\" min=0 max={{radius}} [(ngModel)]=\"border\"> {{border}}<br>\n  <label>Time in sec (if you want to see immediate cghanges set to 0)</label><input type=\"range\" min=0 [(ngModel)]=\"time\"> {{time}}<br>\n  <label>Font Size</label><input type=\"range\" min=0 [(ngModel)]=\"fontSize\"> {{fontSize}}<br>\n  <label>Font Family</label><input type=\"text\" [(ngModel)]=\"fontFamily\"> {{fontFamily}}<br>\n\n\n</div>\n\n"
+module.exports = "<h1>\n  {{title}}\n</h1>\n<div>\n\n\n  <circle-progress #circleProg1\n                   [percent]=\"circle1\"\n                   [boxSize]=\"boxSize\"\n                   [radius]=\"radius\"\n                   [lowColor]=\"'red'\"\n                   [middleColor]=\"'orange'\"\n                   [interColor]=\"'#f1c40f'\"\n                   [highColor]=\"'#16a085'\"\n                   [border]=\"border\"\n                   [fontSize]=\"fontSize\"\n                   [fontFamily]=\"fontFamily\"\n                   [time]=\"time\"\n                   (click)=\"circleProg1.animate()\"\n  ></circle-progress>\n  <br>\n  <label>Percentage</label><input type=\"range\" min=0 max=100 [(ngModel)]=\"circle1\"> {{circle1}}<br>\n  <label>boxSize</label><input type=\"range\" min=0 max=1000 [(ngModel)]=\"boxSize\"> {{boxSize}}<br>\n  <label>Radius</label><input type=\"range\" min={{border}} max={{boxSize*0.5}} [(ngModel)]=\"radius\"> {{radius}}<br>\n  <label>Border</label><input type=\"range\" min=0 max={{radius}} [(ngModel)]=\"border\"> {{border}}<br>\n  <label>Time in sec (if you want to see immediate changes set to 0)</label><input type=\"range\" min=0 max=10 [(ngModel)]=\"time\"> {{time}}<br>\n  <label>Font Size</label><input type=\"range\" min=0 [(ngModel)]=\"fontSize\"> {{fontSize}}<br>\n  <label>Font Family</label><input type=\"text\" [(ngModel)]=\"fontFamily\"> {{fontFamily}}<br>\n\n\n</div>\n\n"
 
 /***/ },
 /* 490 */
