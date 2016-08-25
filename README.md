@@ -2,6 +2,8 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.11-webpack.2.
 
+# [Demo](https://feridum.github.io/angular2-circle-progress/)
+
 ## About
 It is a simple circle progress component created for Angualar2. When it was creating Angular2 was in RC5 version.
 Component is based only on SVG Graphics and has various of options to customize it.
